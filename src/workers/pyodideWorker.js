@@ -1,7 +1,7 @@
 // public/pyodideWorker.js
 
 // Cargar Pyodide usando importScripts
-import 'https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js';
+importScripts('https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js');
 
 let pyodide = null;
 let isLoading = false;
