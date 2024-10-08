@@ -13,10 +13,7 @@ const usePyodide = () => {
   useEffect(() => {
 
     // Importar el Web Worker usando la sintaxis de Webpack 5
-    workerRef.current = new Worker(
-      new URL('../workers/pyodideWorker.js', import.meta.url),
-      { type: 'module' }
-    );
+    workerRef.current = new Worker(new URL('../workers/pyodideWorker.js', import.meta.url));
     
 
     interruptBufferRef.current = new Int32Array(new SharedArrayBuffer(4));
